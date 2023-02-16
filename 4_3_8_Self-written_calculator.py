@@ -17,22 +17,22 @@ def self_written_calculator(a: int, b: int, sign: str) -> int or float:
         """Деление"""
         return a / b
 
-    if sign is not '+-*/':
-        print('Неверная операция')
-
-    if sign == '+':
-        addition(a, b)
-    elif sign == '-':
-        subtraction(a, b)
-    elif sign == '*':
-        multiplication(a, b)
-    elif sign == '/':
-        if b == 0:
-            print('На ноль делить нельзя!')
-        division(a, b)
+    if sign == '+' or sign == '-' or sign == '*' or sign == '/':
+        if sign == '+':
+            return print(addition(a, b))
+        elif sign == '-':
+            return print(subtraction(a, b))
+        elif sign == '*':
+            return print(multiplication(a, b))
+        elif sign == '/':
+            if b == 0:
+                return print('На ноль делить нельзя!')
+            return print(division(a, b))
+    else:
+        return print('Неверная операция')
 
 
 if __name__ == '__main__':
     a, b, sign = int(input()), int(input()), input()
 
-    print(self_written_calculator(a, b, sign))
+    self_written_calculator(a, b, sign)
