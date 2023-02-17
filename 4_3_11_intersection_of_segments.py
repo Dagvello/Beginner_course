@@ -1,15 +1,9 @@
-def intersection(a1: int, b1: int, a2: int, b2: int) -> str or int:
+def intersection(a1: int, b1: int, a2: int, b2: int) -> int:
     """Нахождение пересечения отрезков"""
-    if b1 < a2:
-        return print('пустое множество')
-    elif b1 == a2:
-        return print(b1)
-
-    else:
-        if b1 < b2:
-            return print(a2, b1)
-        else:
-            return print(a2, b2)
+    A = set(x for x in range(a1, b1+1))
+    B = set(x for x in range(a2, b2+1))
+    C = A & B
+    return print(C)
 
 
 if __name__ == '__main__':
