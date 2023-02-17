@@ -38,3 +38,5 @@ def roulette(n: int) -> str:
 if __name__ == '__main__':
     n = int(input())
     print(roulette(n))
+    assert roulette(0) == 'зеленый'
+    assert roulette(100) == 'ошибка ввода'
