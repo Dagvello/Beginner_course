@@ -1,5 +1,6 @@
 def determination_of_the_weight_category_of_a_boxer(weight: int) -> int:
     """Определение весовой категории боксера"""
+
     if weight < 60:
         print('Легкий вес')
     elif weight < 64:
@@ -10,4 +11,5 @@ def determination_of_the_weight_category_of_a_boxer(weight: int) -> int:
 
 
 if __name__ == '__main__':
-    print(determination_of_the_weight_category_of_a_boxer(int(input())))
+    weight = int(input())
+    print(determination_of_the_weight_category_of_a_boxer(weight))
