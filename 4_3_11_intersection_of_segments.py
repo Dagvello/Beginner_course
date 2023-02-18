@@ -1,9 +1,14 @@
 def intersection(a1: int, b1: int, a2: int, b2: int) -> int:
     """Нахождение пересечения отрезков"""
-    A = set(x for x in range(a1, b1+1))
-    B = set(x for x in range(a2, b2+1))
+    A = set(x for x in range(a1, b1+1, 1))
+    B = set(x for x in range(a2, b2+1, 1))
     C = A & B
-    return print(C)
+    my_lst = sorted(list(C))
+    if len(my_lst) == 0:
+        return print('пустое множество')
+    if len(my_lst) == 1:
+        return print(my_lst[0])
+    return print(my_lst[0], my_lst[-1])
 
 
 if __name__ == '__main__':
