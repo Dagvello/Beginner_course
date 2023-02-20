@@ -1,6 +1,7 @@
 def is_interesting_number(number_list: list[int]) -> bool:
     """ Функция определяет интересное число.
-        Число интересное, если в нем разность максимальной и минимальной цифры равняется средней по величине цифре
+        Число интересное, если в нем разность максимальной и минимальной цифры
+        равняется средней по величине цифре
     """
     if len(number_list) != 3:
         raise ValueError("Неверное количество цифр в числе")
@@ -11,8 +12,8 @@ def is_interesting_number(number_list: list[int]) -> bool:
 
 
 if __name__ == '__main__':
-    number_str = input("Введите список цифр через запятую: ")
-    number_list = list(map(int, number_str.split(",")))
+    number_str = input()
+    number_list = list(int(n) for n in number_str)
     try:
         is_interesting = is_interesting_number(number_list)
         if is_interesting:
