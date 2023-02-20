@@ -19,4 +19,4 @@ def calculator(expression):
 
 
 if __name__ == '__main__':
-    print(calculator('jhgjhgj'))
+    print(calculator('10/5'))
