@@ -1,6 +1,6 @@
 def sorting_three(my_list: list) -> list:
     """Функция выводит сортированный список"""
-    return print(*sorted(my_list), sep='\n')
+    return print(*sorted(my_list, reverse=True), sep='\n')
 
 
 if __name__ == '__main__':
