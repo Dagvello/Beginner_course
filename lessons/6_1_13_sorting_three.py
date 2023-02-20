@@ -1,5 +1,5 @@
 def sorting_three(my_list: list) -> list:
-    """Функция выводит сортированный список"""
+    """Функция выводит сортированный список от большего к меньшему"""
     return print(*sorted(my_list, reverse=True), sep='\n')
 
 
