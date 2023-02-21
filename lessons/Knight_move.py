@@ -18,9 +18,9 @@ def is_valid_knight_move(move):
 
 if __name__ == '__main__':
     # Пример использования функции is_valid_knight_move
-    move1 = 'C7-D5'
-    move2 = 'E2-E4'
-    move3 = 'D9-N5'
-    print(is_valid_knight_move(move1))  # True
-    print(is_valid_knight_move(move2))  # False
-    print(is_valid_knight_move(move3))  # False
+    move = input()
+    if is_valid_knight_move(move):
+        print('YES')
+    else:
+        print('NO')
+
