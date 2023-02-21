@@ -3,7 +3,7 @@ def is_beautiful_number(number: int) -> bool:
        7 или на 17. Напишите программу, определяющую, является ли введённое число красивым.
        Программа должна вывести «YES», если число является красивым, или «NO» в противном случае.
     """
-    return number % 7 == 0 or number % 17 == 0 or len(str(number)) == 4
+    return (number % 7 == 0 or number % 17 == 0) and len(str(number)) == 4
 
 
 if __name__ == '__main__':
