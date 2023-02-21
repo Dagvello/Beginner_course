@@ -1,16 +1,18 @@
-def is_beautiful_number(number: int) -> bool:
-    """Назовем число красивым, если оно является четырехзначным и делится нацело на
-       7 или на 17. Напишите программу, определяющую, является ли введённое число красивым.
-       Программа должна вывести «YES», если число является красивым, или «NO» в противном случае.
+def triangle_inequality(lst: list[int]) -> bool:
+    """ Функция которая принимает список из трёх положительных чисел и определяет,
+        существует ли невырожденный треугольник с такими сторонами.
     """
-    return (number % 7 == 0 or number % 17 == 0) and len(str(number)) == 4
+    lst = sorted(lst)
+
+    return lst[-1] < lst[0] + lst[1]
 
 
 if __name__ == '__main__':
+    my_list = [int(input()) for _ in range(3)]
 
     try:
-        beautiful_number = is_beautiful_number(int(input()))
-        if beautiful_number:
+        triangle_inequality = triangle_inequality(my_list)
+        if triangle_inequality:
             print('YES')
         else:
             print('NO')
