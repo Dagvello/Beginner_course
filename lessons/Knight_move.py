@@ -1,7 +1,6 @@
 def examination(move):
     """Проверка правильности входных данных"""
-    valid_squares = [f + r for r in '12345678' for f in 'abcdefgh']
-    move = move.lower()
+    valid_squares = [f + r for r in '12345678' for f in 'ABCDEFGH']
     if len(move) != 5:
         return False
     if move[:2] not in valid_squares or move[3:] not in valid_squares:
