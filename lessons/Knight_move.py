@@ -22,7 +22,7 @@ def is_valid_knight_move(move):
 
 
 if __name__ == '__main__':
-    # Пример использования функции is_valid_knight_move
+
     move = input()
     if examination(move):
         if is_valid_knight_move(move):
