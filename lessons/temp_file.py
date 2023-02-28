@@ -1,8 +1,6 @@
-m = int(input())
+from math import log
 n = int(input())
-if n < m:
-    for i in range(m, n-1, -1):
-        print(i)
-else:
-    for i in range(m, n+1):
-        print(i)
+total = 1
+for i in range(2, n + 1):
+    total += 1 / i
+print(total - log(n))
