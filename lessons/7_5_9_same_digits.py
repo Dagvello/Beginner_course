@@ -1,4 +1,5 @@
 def same_digits(number: int) -> bool:
+    """Функция проверяет все ли цифры в числе одинаковы"""
     sample = number % 10
     while number > 0:
         num = number % 10
