@@ -3,7 +3,7 @@ def reverse_order(number: int) -> int:
     while number > 0:
         num = number % 10
         print(num, end='')
-        number = number//10
+        number = number // 10
 
 
 if __name__ == '__main__':
