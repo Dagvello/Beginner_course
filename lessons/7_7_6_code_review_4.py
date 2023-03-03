@@ -1,5 +1,5 @@
 n = int(input())
-max_digit = n % 10
+max_digit = 0
 while n > 0:
     digit = n % 10
     if digit % 3 == 0:
