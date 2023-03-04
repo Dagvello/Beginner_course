@@ -1,14 +1,14 @@
 s = input()
 
 
-def hashtagGen(text: str) -> str:
+def hashtaggen(text: str) -> str:
     """
     Склейка тэгов
     :param text: string
     :return: string
     """
 
-    return '#'+''.join(text.split())
+    return '#' + ''.join(text.split())
 
 
-print(hashtagGen(s))
+print(hashtaggen(s))
